@@ -7,7 +7,7 @@ Nuxt.js + [vue-material-admin](https://github.com/tookit/vue-material-admin) boi
 To use this boilerplate make sure to you have already installed [Vue CLI](https://www.npmjs.com/package/vue-cli)
 
 ``` bash
-#create project
+# create project
 $ vue init moeddami/nuxt-material-admin my-project  
 $ cd my-project
 
