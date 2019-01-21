@@ -1,0 +1,32 @@
+{
+  "name": "nuxt-material-admin",
+  "version": "1.0.0",
+  "description": "vue-material-admin integration with Nuxt.js",
+  "author": "Mohamed Eddami",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.3.4",
+    "vuetify": "^1.3.14",
+    "vuetify-loader": "^1.0.8",
+    "font-awesome": "^4.7.0",
+    "roboto-fontface": "*",
+    "lodash.truncate": "^4.4.2",
+    "quill": "^1.3.6",
+    "vee-validate": "^2.1.4",
+    "vue-fullcalendar": "^1.0.9",
+    "vue-perfect-scrollbar": "^0.1.0",
+    "vue-quill-editor": "^3.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
