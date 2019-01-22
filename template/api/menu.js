@@ -120,6 +120,12 @@ const Menu =  [
     icon: 'list',
     href: '/login'
   },
+  {
+    title: 'Empty',
+    group: 'extra',
+    icon: 'insert_drive_file',
+    href: '/empty'
+  },
 ];
 // reorder menu
 Menu.forEach((item) => {
