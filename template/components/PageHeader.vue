@@ -3,6 +3,7 @@
     <div class="page-header-left">
       <h3 class="pr-3">{{title}}</h3>
     </div>
+    <v-icon>home</v-icon>
     <v-breadcrumbs divider="-" :items="breadcrumbs">
 
     </v-breadcrumbs>
@@ -32,14 +33,14 @@ export default {
             return i.href === this.$route.path;
           });
           if (child) {
-            breadcrumbs.push(item.title);
-            breadcrumbs.push(child.title);
+            breadcrumbs.push({text: item.title});
+            breadcrumbs.push({text: child.title, disabled: true});
             this.title = child.title;
           }
         } else {
           if (item.href === this.$route.path) {
             this.title = item.title;
-            breadcrumbs.push(item.title);
+            breadcrumbs.push({text: item.title});
           }
         }
       });
