@@ -20,11 +20,7 @@
                 {{item.title}}
               </h3>
               <div class="post--desc py-2 text--secondary">
-                {{ item.desc | 
-                  truncate({
-                    length: 150
-                  })
-                }}
+                {{ item.desc.substr(0, 150) + '...' }}
               </div>
               <div class="post--meta o-flex justify-space-between">
                 <div class="post--author caption grey--text text--darken-1">
@@ -45,66 +41,71 @@
                     <small>50+</small>
                   </a>
                 </div>
-              </div>                    
+              </div>
             </div>
           </a>
         </li>
-      </ul>  
+      </ul>
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-export default {
-  props: {
-    items: { type: [Array, Object] },
-  },
+  export default {
+    props: {
+      items: {type: [Array, Object]},
+    },
 
-  methods: {
-    handleThumb () {
-      // implement your own method here
-    },
-    handleComment () {
-      // implement your own method here
-    },
-    handleFavorite () {
-      // implement your own method here
-    },
-  }
-};
+    methods: {
+      handleThumb() {
+        // implement your own method here
+      },
+      handleComment() {
+        // implement your own method here
+      },
+      handleFavorite() {
+        // implement your own method here
+      },
+    }
+  };
 </script>
 
 <style scoped>
-.ft-200 {
-  font-weight: 200;
-}
-.post--item:hover{
-  background: #f6f6f6;
-}
-.post--item a {
-  text-decoration: none;
-}
-.flex-list.vertical {
-  flex-direction: column;
-}
-.flex-list li{
-  display: flex;
-  padding: 15px 0;
-  border-bottom: 1px solid #eee;
-}
-.flex-list li:last-child {
-  border: none;
-}
+  .ft-200 {
+    font-weight: 200;
+  }
 
-.flexbox-centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .post--item:hover {
+    background: #f6f6f6;
+  }
 
-.image-scale:hover {
-  transform: scale(1.05);
-  transition: 0.7s; 
-}
+  .post--item a {
+    text-decoration: none;
+  }
+
+  .flex-list.vertical {
+    flex-direction: column;
+  }
+
+  .flex-list li {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .flex-list li:last-child {
+    border: none;
+  }
+
+  .flexbox-centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-scale:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+  }
 
 </style>

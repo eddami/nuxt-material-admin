@@ -56,7 +56,7 @@
                 <a @click="showDetail(item)" class="d-flex">
                   <v-card flat tile>
 
-                      <img style="height: 150px; width: 100%" :src="(item.path)" alt="" v-if="isImage(item)">
+                      <img style="height: 150px; width: 100%" :src="item.path" alt="" v-if="isImage(item)">
                       <v-icon class="mx-auto" size="135" v-else>insert_drive_file</v-icon>
 
                     <v-divider></v-divider>

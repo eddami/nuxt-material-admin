@@ -18,7 +18,7 @@
     </v-text-field>
     <v-spacer></v-spacer>
     <v-btn icon href="https://github.com/moeddami/nuxt-material-admin">
-      <v-icon>fa fa-github</v-icon>
+      <v-icon>fa-2x fa-github</v-icon>
     </v-btn>
     <v-btn icon @click="handleFullScreen()">
       <v-icon>fullscreen</v-icon>

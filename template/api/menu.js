@@ -36,10 +36,10 @@ const Menu = [
     component: 'widgets',
     icon: 'widgets',
     items: [
-      {name: 'social', title: 'Social', href: '/widgets/chart'},
-      {name: 'statistic', title: 'Statistic', badge: 'new', component: 'components/statistic'},
+      {name: 'social', title: 'Social', href: '/widgets/social'},
+      {name: 'statistic', title: 'Statistic', badge: 'new', href: '/widgets/statistic'},
       {name: 'chart', title: 'Chart', href: '/widgets/chart'},
-      {name: 'list', title: 'List', component: 'components/widget-list'},
+      {name: 'list', title: 'List', href: '/widgets/list'},
     ]
   },
   {header: 'UI Elements'},
