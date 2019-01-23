@@ -373,7 +373,6 @@
   import VWidget from '@/components/VWidget';
 
   export default {
-    layout: 'dashboard',
     components: {
       BoxChart,
       MiniChart,

@@ -55,7 +55,6 @@
   import ProfileCard from '@/components/widgets/card/ProfileCard';
 
   export default {
-    layout: 'dashboard',
     components: {
       NameCard,
       ProfileCard

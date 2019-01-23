@@ -31,7 +31,6 @@
   import PostListCard from '@/components/widgets/card/PostListCard';
 
   export default {
-    layout: 'dashboard',
     components: {
       PostListCard,
       MessageList,

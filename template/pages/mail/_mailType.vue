@@ -56,7 +56,7 @@
                   <v-checkbox></v-checkbox>
                 </v-list-tile-action>
                 <v-list-tile-avatar>
-                  <img :src="item.from.avatar.substring(0, 4) === 'http' ? item.from.avatar : require('@/static/avatar/' + item.from.avatar)">
+                  <img :src="item.from.avatar">
                 </v-list-tile-avatar>
                 <v-list-tile-content>
                   <v-list-tile-title>{{ item.from.name }}</v-list-tile-title>
