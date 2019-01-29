@@ -76,8 +76,8 @@ const Menu = [
     component: 'picker',
     icon: 'filter_vintage',
     items: [
-      {name: 'timepicker', title: 'Timepicker', component: 'pickers/timepicker'},
-      {name: 'datepicker', title: 'Datepicker', component: 'pickers/datepicker'},
+      {name: 'timepicker', title: 'Timepicker', href: '/pickers/timepicker'},
+      {name: 'datepicker', title: 'Datepicker', href: '/pickers/datepicker'},
 
     ]
   },
