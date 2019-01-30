@@ -104,12 +104,12 @@ const Menu = [
     component: 'forms',
     icon: 'edit',
     items: [
-      {name: 'basic', title: 'General', component: 'components/basic-forms'},
-      {name: 'selects', title: 'Selects', badge: 'new', component: 'components/selects'},
-      {name: 'selection-controls', title: 'Selection Controls', component: 'components/selection-controls'},
-      {name: 'text-fields', title: 'Text Fields', component: 'components/text-fields'},
-      {name: 'steppers', title: 'Steppers', component: 'components/steppers'},
-      {name: 'editors', title: 'Editors', component: 'components/editors'},
+      // {name: 'basic', title: 'General', href: '/forms/basic-forms'},
+      {name: 'selects', title: 'Selects', badge: 'new', href: '/forms/selects'},
+      {name: 'selection-controls', title: 'Selection Controls', href: '/forms/selection-controls'},
+      {name: 'text-fields', title: 'Text Fields', href: '/forms/text-fields'},
+      {name: 'steppers', title: 'Steppers', href: '/forms/steppers'},
+      {name: 'editors', title: 'Editors', href: '/forms/editors'},
     ]
   },
   {divider: true},
