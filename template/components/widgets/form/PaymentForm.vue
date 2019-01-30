@@ -2,15 +2,23 @@
   <v-form v-model="valid">
     <v-subheader class="pa-0">Payment Method</v-subheader>
     <div class="layout ma-0 row">
-      <a class="payment-method pa-3 grey--text mr-3">
-        <i class="fa fa-credit-card display-3"></i>
-      </a>      
-      <a class="payment-method pa-3 grey--text mr-3">
-        <i class="fa fa-apple display-3"></i>
-      </a>      
-      <a class="payment-method pa-3 grey--text mr-3">
-        <i class="fa fa-paypal display-3"></i>
-      </a>      
+      <a class="mr-4">
+        <v-icon>
+          fa-4x fa-credit-card
+        </v-icon>
+      </a>
+
+      <a class="mr-4">
+        <v-icon>
+          fa-4x fa-apple
+        </v-icon>
+      </a>
+
+      <a class="mr-4">
+        <v-icon>
+          fa-4x fa-paypal
+        </v-icon>
+      </a>
     </div>
     <v-subheader class="pa-0 mt-3">Payment Detail</v-subheader>
     <div class="d-flex my-2">
