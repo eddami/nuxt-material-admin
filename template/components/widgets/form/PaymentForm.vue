@@ -78,9 +78,6 @@
 
 <script>
 export default {
-  $_veeValidate: {
-    validator: 'new'
-  },  
   data: () => ({
     saveCard: true,
     cardTypes: [
