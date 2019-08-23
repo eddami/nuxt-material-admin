@@ -12,7 +12,7 @@ https://moeddami.github.io/nuxt-material-admin-demo/dashboard/
 
 ### Project Setup
 
-To use this boilerplate make sure to you have already installed [Vue CLI](https://www.npmjs.com/package/vue-cli)
+To use this boilerplate make sure to you have already installed [Vue CLI](https://www.npmjs.com/package/@vue/cli)
 
 ``` bash
 # create project
