@@ -62,34 +62,34 @@
     components: {
       NotificationList
     },
-    data: () => ({
-      items: [
-        {
-          icon: 'account_circle',
-          href: '#',
-          title: 'Profile',
-          click: (e) => {
-            console.log(e);
+    data:  function () {
+      return {
+        items: [
+          {
+            icon: 'account_circle',
+            href: '#',
+            title: 'Profile',
+            click: (e) => {
+              console.log(e);
+            }
+          },
+          {
+            icon: 'settings',
+            href: '#',
+            title: 'Settings',
+            click: (e) => {
+              console.log(e);
+            }
+          },
+          {
+            icon: 'fullscreen_exit',
+            href: '#',
+            title: 'Logout',
+            click: this.handleLogout
           }
-        },
-        {
-          icon: 'settings',
-          href: '#',
-          title: 'Settings',
-          click: (e) => {
-            console.log(e);
-          }
-        },
-        {
-          icon: 'fullscreen_exit',
-          href: '#',
-          title: 'Logout',
-          click: (e) => {
-            this.$router.push('/logout')
-          }
-        }
-      ],
-    }),
+        ],
+      }
+    },
     computed: {
       toolbarColor() {
         return this.$vuetify.options.extra.mainNav;
@@ -101,6 +101,9 @@
       },
       handleFullScreen() {
         Util.toggleFullScreen();
+      },
+      handleLogout() {
+        this.$router.push('/login');
       }
     }
   };
