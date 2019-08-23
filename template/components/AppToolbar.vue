@@ -85,7 +85,7 @@
             icon: 'fullscreen_exit',
             href: '#',
             title: 'Logout',
-            click: this.handleLogut
+            click: this.handleLogout
           }
         ],
       }
@@ -102,8 +102,8 @@
       handleFullScreen() {
         Util.toggleFullScreen();
       },
-      handleLogut() {
-        this.$router.push('/logout');
+      handleLogout() {
+        this.$router.push('/login');
       }
     }
   };
