@@ -25,6 +25,7 @@
     "vuetify-loader": "^1.4.3"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.9.1",
     "nodemon": "^2.0.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
