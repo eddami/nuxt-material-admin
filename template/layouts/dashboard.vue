@@ -5,7 +5,7 @@
         <app-drawer class="app--drawer"></app-drawer>
         <app-toolbar class="app--toolbar"></app-toolbar>
         <v-content>
-          <v-container>
+          <v-container class="mb-12">
             <!-- Page Header -->
             <page-header></page-header>
             <nuxt />
