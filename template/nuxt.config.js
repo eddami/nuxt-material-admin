@@ -60,7 +60,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ["nuxt-validate"],
 
   /*
    ** Build configuration
