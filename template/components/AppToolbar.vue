@@ -20,17 +20,18 @@
     <v-menu
       offset-y
       origin="center center"
-      class="elevation-1"
       :nudge-right="140"
-      :nudge-bottom="14"
+      :nudge-bottom="10"
       transition="scale-transition"
     >
-      <v-btn icon flat slot="activator">
-        <v-badge color="red" overlap>
-          <span slot="badge">3</span>
-          <v-icon medium>notifications</v-icon>
-        </v-badge>
-      </v-btn>
+      <template v-slot:activator="{ on }">
+        <v-btn icon flat v-on="on">
+          <v-badge color="red" overlap>
+            <span slot="badge">3</span>
+            <v-icon medium>notifications</v-icon>
+          </v-badge>
+        </v-btn>
+      </template>
       <notification-list></notification-list>
     </v-menu>
     <v-menu
@@ -41,7 +42,7 @@
       transition="scale-transition"
     >
       <template v-slot:activator="{ on }">
-        <v-btn icon large text slot="activator" v-on="on">
+        <v-btn icon large text v-on="on">
           <v-avatar size="30px">
             <v-icon>person</v-icon>
           </v-avatar>
