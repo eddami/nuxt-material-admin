@@ -8,9 +8,7 @@
           <v-container>
             <!-- Page Header -->
             <page-header></page-header>
-            <div class="page-wrapper">
-              <nuxt />
-            </div>
+            <nuxt />
           </v-container>
           <!-- App Footer -->
           <v-footer height="auto" class="white pa-3 app--footer">
@@ -98,11 +96,6 @@ export default {
   top: 50% !important;
   right: 0;
   border-radius: 0;
-}
-
-.page-wrapper {
-  min-height: calc(100vh - 64px - 50px - 81px);
-  margin-bottom: 50px;
 }
 
 .app--footer {
