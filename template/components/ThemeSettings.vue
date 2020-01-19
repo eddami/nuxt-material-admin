@@ -153,8 +153,8 @@ export default {
       immediate: true
     },
     sideBarOption: {
-      handler (val) {
-        this.$vuetify.dark = (val === 'dark');
+      handler(val) {
+        this.$vuetify.theme.dark = val === "dark";
       },
       immediate: true      
     }

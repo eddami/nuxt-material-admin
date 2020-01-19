@@ -1,5 +1,5 @@
 <template>
-  <div id="pageDashboard">
+  <v-app :dark="true">
     <v-container grid-list-xl fluid>
       <v-layout row wrap>
         <!-- mini statistic start -->
@@ -195,7 +195,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </v-app>
 </template>
 
 <script>
