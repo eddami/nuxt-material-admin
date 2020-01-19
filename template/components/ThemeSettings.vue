@@ -147,8 +147,9 @@ export default {
   watch: {
     themeColor: {
       handler (val) {
-        this.$vuetify.theme.primary = this.colors[val].base;
-        
+        var theme;
+        var theme = this.$vuetify.theme.dark ? "dark" : "light";
+        this.$vuetify.theme.themes[theme].primary = this.colors[val].base;
       },
       immediate: true
     },
