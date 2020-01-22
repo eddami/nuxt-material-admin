@@ -1,11 +1,13 @@
 <template>
   <v-card>
-    <v-toolbar card dense color="transparent">
-      <v-toolbar-title><h4>Order</h4></v-toolbar-title>
+    <v-toolbar flat dense color="transparent">
+      <v-toolbar-title>
+        <h4>Order</h4>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>more_vert</v-icon>
-      </v-btn>      
+      </v-btn>
     </v-toolbar>
     <v-divider></v-divider>
     <v-card-text class="pa-0">
@@ -13,14 +15,25 @@
         <v-data-table
           :headers="headers"
           :items="items"
-          hide-actions
+          hide-default-footer
           class="elevation-0 table-striped"
         >
-          <template slot="items" slot-scope="props">
-            <td>{{ props.item.id }}</td>
-            <td class="text-xs-left">{{ props.item.product }}</td>
-            <td class="text-xs-left">{{ props.item.price }}</td>
-            <td class="text-xs-left"><v-chip label small :color="getColorByStatus(props.item.status)" text-color="white" >{{ props.item.status }}</v-chip></td>
+          <template v-slot:item.id="{ item }">
+            <td>{{ item.id }}</td>
+          </template>
+          <template v-slot:item.deadline="{ item }">
+            <td>{{ item.product }}</td>
+          </template>
+          <template v-slot:item.progress="{ item }">
+            <td>{{ item.price }}</td>
+          </template>
+          <template v-slot:item.status="{ item }">
+            <v-chip
+              label
+              small
+              :color="getColorByStatus(item.status)"
+              text-color="white"
+            >{{ item.status }}</v-chip>
           </template>
         </v-data-table>
       </template>
@@ -30,9 +43,9 @@
 </template>
 
 <script>
-import items from '@/api/order';
+import items from '@/api/order'
 export default {
-  data () {
+  data() {
     return {
       headers: [
         {
@@ -43,8 +56,7 @@ export default {
         },
         { text: 'Product', value: 'deadline' },
         { text: 'Price', value: 'progress' },
-        { text: 'Status', value: 'status' },
-
+        { text: 'Status', value: 'status' }
       ],
       items: items,
       colors: {
@@ -52,18 +64,18 @@ export default {
         sent: 'red',
         delivered: 'green'
       }
-    };
+    }
   },
   computed: {
-    randomColor () {
-      let item = Math.floor(Math.random() * this.colors.length);
-      return this.colors[item];
-    },
+    randomColor() {
+      let item = Math.floor(Math.random() * this.colors.length)
+      return this.colors[item]
+    }
   },
   methods: {
-    getColorByStatus (status) {
-      return this.colors[status];
-    },
+    getColorByStatus(status) {
+      return this.colors[status]
+    }
   }
-};
+}
 </script>
